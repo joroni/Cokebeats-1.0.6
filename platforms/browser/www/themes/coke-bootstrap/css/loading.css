@@ -1,0 +1,32 @@
+.loader {
+    position: fixed;
+    top: 50 % ;
+    left: 60 % ;
+    margin - left: -65 px;
+    margin - top: -31 px;
+    color: #FFFFFF;
+    font - size: 24 px;
+    z - index: 30000;
+    background: url("../img/loading.gif") 50% 50% no-repeat rgba(255,255,255, 1) !important;
+  /*  background: rgba(255, 255, 255, 1) !important;*/
+    opacity: 0.2;
+    width: auto;
+    height: auto;
+    padding: 10 px; -
+    moz - border - radius: 10 px; -
+    webkit - border - radius: 10 px; -
+    khtml - border - radius: 10 px;
+    border - radius: 10 px;
+
+    -
+    webkit - filter: contrast(65 % ); /* Chrome, Safari, Opera */
+    filter: contrast(65 % );
+
+
+}
+
+.loader img {
+    height: auto;
+    opacity: 1;
+    width: 50px;
+}

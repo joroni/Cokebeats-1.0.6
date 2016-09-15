@@ -1,0 +1,39 @@
+
+
+              <div id="archive">
+
+                  <% if(posts.length) { %>
+
+                  <div class="media-list scene_element scene_element--fadein">
+
+                      <% _.each( posts, function( post ){ %>
+
+                      <div class="media col-md-6">
+                          <a href="<%= TemplateTags.getPostLink(post.id) %>">
+                              <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>
+                              <div class="media-object-thumb option animated zoomIn lazy" style="background: url('<%= post.thumbnail.src %>') #ddd;">
+
+                                  <div class="media-title-inner"><%= post.title %></div>
+
+                              </div>
+
+                              <% } %>
+                          </a>
+
+                      </div>
+
+                      <% }); %>
+
+                  </div>
+
+                  <% if( TemplateTags.displayGetMoreLink() ){ %>
+                  <button type="button" class="get-more btn btn-default">Get more posts (<%=
+                      TemplateTags.getMoreLinkNbLeft() %> left)
+                  </button>
+                  <% } %>
+
+                  <% }else{ %>
+                  <p>No post found!</p>
+                  <% } %>
+
+              </div>

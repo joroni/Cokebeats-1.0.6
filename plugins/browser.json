@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ko.cokebeats"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ko.cokebeats"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ko.cokebeats"
+        }
+    },
+    "dependent_plugins": {}
+}

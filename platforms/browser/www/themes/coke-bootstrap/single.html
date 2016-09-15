@@ -1,0 +1,70 @@
+<!--<div class="row">
+    <div class="m-landing-layout">
+        <div class="m-page scene_element scene_element--fadeinup">
+
+                <div class="segment_thumb" style="width: 100%;">
+                    <% if(  post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){ %>
+                    <img src="<%= post.thumbnail.src %>" style="min-width: 100%; max-width:100%;"/>
+                    <% } %>
+
+
+                </div>
+
+        </div>
+    </div>
+</div>-->
+<div class="row">
+    <div class="commentbox">
+        <span style="color: #d10000;"> <%= TemplateTags.formatDate(post.date,'d/m/Y') %> | </span>
+        <% if( post.nb_comments > 0 ){ %>
+        <% } %>
+        <a class="comments" style="color:#8e8e8e !important;" data-post-id="<%= post.id %>" href="#"><% print(post.nb_comments) %>&nbsp;comment<% post.nb_comments > 1 ? print('s') : '' %></a>
+        <a class="comments" data-post-id="<%= post.id %>" href="#"><i class="fa fa-comment-o" style="color:#8e8e8e !important;"></i></a>
+    </div>
+
+
+<div id="single" class="post-<%= post.id %> m-page scene_element scene_element--fadeinup">
+
+    <h1 id="top"><%= post.title %></h1>
+
+
+   <!-- - <a class="comments" data-post-id="<%= post.id %>" href="#">Comment this post</a>-->
+   <!-- <div id="single-content">-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+        <%= post.content %>
+            </div>
+
+        </div>
+    <!--</div>-->
+
+   <!-- <div class="commentbox2">
+        <span style="color: #d10000;"> <%= TemplateTags.formatDate(post.date,'d/m/Y') %> | </span>
+        <% if( post.nb_comments > 0 ){ %>
+        <% } %>
+        <a class="comments" data-post-id="<%= post.id %>" href="#"><% print(post.nb_comments) %>&nbsp;comment<% post.nb_comments > 1 ? print('s') : '' %></a>
+        | <a class="comments" data-post-id="<%= post.id %>" href="#">Post</a>
+    </div>-->
+
+    </div>
+
+
+    <!-- Add Pagination -->
+
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            pagination: '.swiper-pagination',
+            paginationType: 'fraction'
+        });
+
+
+
+
+    </script>

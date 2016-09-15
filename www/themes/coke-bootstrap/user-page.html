@@ -1,0 +1,19 @@
+<div id="single" id="user-page">
+	<h1>Me</h1>
+	<div id="single-content" style="text-align: center; text-transform: capitalize;">
+         <strong><%= user.login %></strong>
+            <br><br>
+            <!--<strong>Role</strong> : <%= user.role %>-->
+            <strong><%= user.role %></strong>
+            <br><br>
+            <strong><%= user.email %></strong>
+            <br><br>
+           <!-- <strong>Capabilities</strong> :
+            <ul>
+                <% _.each( user.capabilities, function( capability ){ %>
+                    <li><%= capability %></li>
+                <% } ); %>
+            </ul>-->
+        <a href="#logout" id="logout">Logout</a>
+	</div>
+</div>

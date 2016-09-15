@@ -1,0 +1,58 @@
+<div class="top-banner">&nbsp;</div>
+<div class="container" id="container">
+	<nav class="navbar navbar-default navbar-fixed-top m-right-panel m-page scene_element scene_element--fadeinright" role="navigation">
+		<div class="navbar-header" id="app-title">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+		    </button>
+		    <span class="navbar-brand refresh-button-wrapper">
+		     	<a href="#" id="refresh-button" class="navbar-brand m-aside scene_element scene_element--fadein"><span class="flaticon-reload"></span></a>
+		     	<a href="#" id="go-back" class="navbar-brand m-aside scene_element scene_element--fadein" style="display:none"><span class="flaticon-back"></span></a>
+		    </span>
+		   <!-- <span class="navbar-brand"><a href="#"><%= app_title %></a></span> -->
+			<span class="navbar-brand"><a href="#"><span class="logo">
+				<img src="img/logo.png" style="height: auto; width: 160px;">
+			</span> </a></span>
+		</div>
+		<div class="collapse navbar-collapse m-right-panel m-aside scene_element scene_element--fadein" id="navbar-collapse">
+		    <%= menu %>
+		</div>
+	</nav>
+	<div id="feedback" style="display:none; background: transparent !important; color: #fff;"></div>
+
+
+    <div class="index m-scene" id="main">
+
+	<%= content %>
+
+        </div>
+
+<footer class="footer" data-role="footer">
+    <div class="col-md-3"><a href="#component-latest-newsletters" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left"><span class="fa flaticon-house"></span></a></div>
+    <div class="col-md-3"><a href="#component-allnewsletters" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left"><span class="fa flaticon-copy"></span></a></div>
+    <div class="col-md-3"><a href="#" onclick="feedback();" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left"><span class="fa flaticon-chat-1"></span></a></div>
+    <div class="col-md-3"><a href="#user-page" id="app-menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left"><span class="fa flaticon-avatar"></span></a></div>
+
+
+
+
+</footer>
+<div id="waiting" style="display:none"></div>
+<div class="loader" style="display: none;"></div>
+<div id="theme-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" id="theme-modal-header">
+                <button type="button" class="close" id="theme-modal-close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body" id="theme-modal-body">
+            </div>
+            <div class="modal-footer" id="theme-modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
